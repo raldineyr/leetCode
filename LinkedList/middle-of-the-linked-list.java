@@ -3,8 +3,7 @@ class Solution {
         if(head == null){
             return null;
         }
-        int counter = 1;
-        int nodeNumber = 0;
+        int counter = 1, nodeNumber = 0;
         ListNode toCounter = head;
         while(toCounter.next != null){
             counter++;
@@ -14,8 +13,7 @@ class Solution {
             counter += 1;
             nodeNumber +=1;
         }
-        ListNode current = head;
-        ListNode response = null;
+        ListNode current = head, response = null;
             while(nodeNumber <= counter/2){
                 response = current; 
                 current = current.next;
